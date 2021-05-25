@@ -2,7 +2,7 @@
 
 <div class="img-container">
   <div class="main-img">
-    <%= image_tag(@bike.picture_link) %>
+    <%= cl_image_tag @bike.photos.first.key, crop: :fill %>
   </div>
   <div class="right-grid-img">
     <%= image_tag("main-bikeG.jpg") %>
