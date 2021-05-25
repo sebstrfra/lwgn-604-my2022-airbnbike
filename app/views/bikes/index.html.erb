@@ -1,0 +1,26 @@
+<!-- Fancy Header -->
+
+<img src="https://source.unsplash.com/tG36rvCeqng/1600x900" alt="">
+<br>
+<br>
+<h1>Change your live. Rent a bike.</h1>
+<h2>All our bikes</h2>
+
+<!-- Bikes as cards -->
+<br>
+<br>
+<ul>
+  <% @bikes.each do |bike| %>
+  <li>
+   <%= bike.name %>
+   <%= bike.description %>
+   <%= bike.category %>
+   <br>
+   <br>
+  </li>
+  <% end %>
+</ul>
+
+
+
+
