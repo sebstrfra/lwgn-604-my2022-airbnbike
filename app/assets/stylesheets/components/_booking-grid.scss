@@ -1,0 +1,31 @@
+.booking-container {
+  width: 100vw;
+  display: flex;
+  max-width: 100%;
+  background-color: #ED6F37;
+  padding: 16px;
+}
+
+.bike-description {
+  flex: 50%;
+  background-color: #344270;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  margin: 8px;
+  height: 495px;
+}
+
+.booking-form {
+  flex: 50%;
+  border: 3px solid #344270;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  margin: 8px;
+  height: 495px;
+}
+
+h1 {
+  margin-top: 16px;
+}
