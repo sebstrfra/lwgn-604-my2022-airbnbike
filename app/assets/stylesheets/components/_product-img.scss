@@ -1,0 +1,37 @@
+.img-container {
+  width: 100vw;
+  display: flex;
+  max-width: 100%;
+  background-color: #7998B2;
+}
+
+.main-img {
+  width: 40%;
+    height: auto;
+    padding: 16px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  }
+}
+
+.right-grid-img {
+    display: grid;
+    width: 60%;
+    height: auto;
+    grid-template-columns: 50% 50%;
+    padding: 16px;
+    grid-gap: 8px;
+
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  }
+}

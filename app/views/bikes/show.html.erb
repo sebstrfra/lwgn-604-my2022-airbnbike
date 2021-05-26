@@ -1,2 +1,32 @@
-<h1>Bikes#show</h1>
-<p>Find me in app/views/bikes/show.html.erb</p>
+<h1> <%= @bike.name %></h1>
+
+<div class="img-container">
+  <div class="main-img">
+    <%= image_tag(@bike.picture_link) %>
+  </div>
+  <div class="right-grid-img">
+    <%= image_tag("main-bikeG.jpg") %>
+    <%= image_tag("rock-bikeG.jpg") %>
+    <%= image_tag("snow-bikeG.jpg") %>
+    <%= image_tag("bar-bikeG.jpg") %>
+  </div>
+</div>
+
+<div class="booking-container">
+  <div class="bike-description">
+    <h1>Description</h1>
+    <p>
+      <%= @bike.description %>
+    </p>
+  </div>
+
+  <div class="booking-form">
+    <h1>Form Booking</h1>
+
+  </div>
+
+
+
+</div>
+
+<h1></h1>
