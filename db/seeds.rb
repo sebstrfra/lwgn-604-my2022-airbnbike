@@ -22,7 +22,7 @@ bike_1 = Bike.new(name: "BMX 2000", description: "The Yoof 14” is the newest a
 bike_1.user = user_1
 bike_1.save!
 
-bike_2 = Bike.new(name: "BMX 3000", description: "The 2021 Fit Bike Co STR BMX Bike is designed to smash through the streets from big one line to the next. A 20.5 toptube, 12.6 chainstay, and 9 rise 4-piece bars contribute to creating the perfect street geometry for easy to pull manuals and 180's. Fully sealed bearings can take hard landings from big gaps and require less maintenance all while providing a super smooth ride. Fit threw their catalog at this bike including components from their lineup such as Fit Mack-PC pedals, Fit Key sprocket, Fit F/U 2.4 wide tires, and more. The Fit STR will help you to nail down those lines you've been looking at for so long.", category: "Mountain bike", location:"Berlin", picture_link:"https://www.wikihow.com/Do-BMX-Tricks#/Image:Do-BMX-Tricks-Step-01-Version-2.jpg")
+bike_2 = Bike.new(name: "BMX 3000", description: "The 2021 Fit Bike Co STR BMX Bike is designed to smash through the streets from big one line to the next. A 20.5 toptube, 12.6 chainstay, and 9 rise 4-piece bars contribute to creating the perfect street geometry for easy to pull manuals and 180's. Fully sealed bearings can take hard landings from big gaps and require less maintenance all while providing a super smooth ride. Fit threw their catalog at this bike including components from their lineup such as Fit Mack-PC pedals, Fit Key sprocket, Fit F/U 2.4 wide tires, and more. The Fit STR will help you to nail down those lines you've been looking at for so long.", category: "Mountain bike", location:"Berlin", picture_link:"https://global-uploads.webflow.com/5f370e64e5ef2b186800c1c8/6082e168cf695f8d61ae702f_WTP_MY21_Nova_ultraviolet-01-tinified.jpg")
 bike_2.user = user_1
 bike_2.save!
 
@@ -61,7 +61,7 @@ puts "Creating User: Sebastian"
 user_4 = User.new(first_name: "Sebastian", last_name: "Strube", email: "strube.s@email.de", password: "PWsebastian")
 user_4.save!
 
-puts "Creating two bikes for Caterina"
+puts "Creating two bikes for Sebastian"
 
 bike_7 = Bike.new(name: "FATHOM E+ 3 ELECTRIC BIKE", description: "Take control of the trail with this fun new hardtail E-bike. Now you can climb with greater ease and comfort, and ride farther—the perfect formula for an enjoyable day on the trail.", category: "Mountain bike", location:"Cologne", picture_link:"https://images.giant-bicycles.com/b_white,c_pad,h_650,q_80/ibglhgnfaqd4loxipr0m/MY21-Fathom-E+-3-_Color-A.jpg")
 bike_7.user = user_4
