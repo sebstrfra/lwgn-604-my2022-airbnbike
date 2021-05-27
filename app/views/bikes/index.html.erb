@@ -4,7 +4,7 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://source.unsplash.com/tG36rvCeqng/1600x900');">
   <div class="container" style="color: white">
     <h1>Change your life.<br> Become a <strong>BikeBee.</strong></h1>
-    <p>Rent the best bikes in town. </p>
+    <p>Rent the best bikes in town.</p>
   </div>
 </div>
 
@@ -21,9 +21,9 @@
       <img class="card-img-top card-bike-img" src=<%= bike.picture_link %>>
       <div class="card-body">
         <h5 class="card-title"><%= bike.name %></h5>
-        <p class="card-text"><%= bike.description %></p>
-        <p class="card-text"><%= bike.category %></p>
-        <button type="button" class="btn btn-primary"><%= link_to "Details", bike_path(bike) %></button>
+         <p class="card-category"><%= bike.category %></p>
+         <p class="card-text"><%= bike.description %></p>
+        <button type="button" class="card-button"><%= link_to "Details", bike_path(bike) %></button>
       </div>
     </div>
     <% end %>
