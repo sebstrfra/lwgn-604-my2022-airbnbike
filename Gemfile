@@ -34,6 +34,7 @@ gem 'simple_form'
 
 # devise as instructed in lecture notes
 gem 'devise'
+gem 'cloudinary', '~> 1.16.0'
 
 group :development, :test do
   gem 'pry-byebug'
