@@ -21,12 +21,12 @@
   </div>
 
   <div class="booking-form">
-    <h1>Form Booking</h1>
-
+    <h1>Book your Bike</h1>
+    <%= simple_form_for [@bike, @booking] do |f| %>
+      <%= f.input :start_date %>
+      <%= f.input :end_date %>
+      <%= f.submit %>
+    <% end %>
   </div>
 
-
-
 </div>
-
-<h1></h1>
