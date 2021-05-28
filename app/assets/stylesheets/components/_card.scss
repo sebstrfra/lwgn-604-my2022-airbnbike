@@ -1,10 +1,96 @@
-.card-bike {
-  min-width: 300px;
-  background-color: $light-blue;
-  color: white;
-  border-radius: 10px;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.card-bike-text {
+
+.card-deck {
+  padding: 38px 16px 100px 16px;
+}
+
+.card-bike {
+  min-width: 300px;
+  background-color: #7998b2;
+  color: white;
+  border-radius: 10px;
+  margin: 16px;
+  margin-bottom: 16px;
+  height: 800px;
+}
+
+.card-text {
   font-size: 16px;
+  text-align: center;
+}
+
+.card-title {
+  text-align: center;
+}
+.card-category {
+  font-weight: bold;
+  text-align: center;
+  color: #344270
+}
+.card-bike-img {
+  border-radius: 8px 8px 0 0;
+  border: 1px solid #ED6F37;
+  object-fit: cover;
+  height: 300px;
+}
+
+.card-button {
+  margin-top: auto;
+  background-color:#ED6F37;
+  border-radius: 8px;
+  width: 200px;
+  border-style: solid;
+  border-color: #ED6F37;
+}
+a {
+  color: white;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+
+.card-product {
+  overflow: hidden;
+  height: 120px;
+  background: $light-blue;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  color: white;
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
 }

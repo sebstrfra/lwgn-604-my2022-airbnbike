@@ -11,21 +11,35 @@
   </div>
 </div>
 
+
 <div class="booking-container">
+
   <div class="bike-description">
-    <h1>Description</h1>
+  <h1>Description</h1>
     <p>
       <%= @bike.description %>
     </p>
   </div>
 
-  <div class="booking-form">
-    <h1>Form Booking</h1>
 
+  <div class="booking-form">
+    <h1>Book your Bike</h1>
+    <div class ="form-box">
+      <%= simple_form_for [@bike, @booking] do |f| %>
+
+        <div class ="start-date">
+          <%= f.input :start_date %>
+        </div>
+
+        <div class ="end-date">
+          <%= f.input :end_date %>
+        </div>
+
+
+          <%= f.button :submit, "Book", class: "my-button" %>
+
+      <% end %>
+    </div>
   </div>
 
-
-
 </div>
-
-<h1></h1>

@@ -13,6 +13,9 @@ class BikesController < ApplicationController
     else
       @photos = @bike.photos
     end
+
+    @booking = Booking.new
+
   end
 
   def index
