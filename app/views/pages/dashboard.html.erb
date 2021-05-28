@@ -1,35 +1,43 @@
-<h1><%= current_user.first_name %>s Dashboard</h1>
+<h1>Hi <%= current_user.first_name %> 👋. <br> Great to see you!</h1>
 
 <br>
 <br>
-
-<h2>myBikes 🚲</h2>
-<br>
-<% @bikes.each do |bike| %>
-<h5><%= bike.name %></h5>
-<% bike.bookings.each do |booking| %>
-To: <%= booking.user.first_name %> Start: <%= booking.start_date %>, End: <%= booking.end_date %> <br>
-<% end %>
-<br>
-<% end %>
-<br>
-<br>
-
-
 <div class="container">
-  <h2>myBeeBikeBookings 📆</h2> <br>
+
+  <h2>Your Bikes</h2>
+  <br>
+  <% @bikes.each do |bike| %>
+  <h5><%= bike.name %></h5>
+  <% bike.bookings.each do |booking| %>
+  To: <%= booking.user.first_name %> Start: <%= booking.start_date %>, End: <%= booking.end_date %> <br>
+  <% end %>
+  <br>
+  <% end %>
+  <br>
+  <br>
+
+
+  <h2>myBeeBikeBookings </h2> <br>
   <% @bookings.each do |booking| %>
-    <div class="card-product">
-      <img src=<%= booking.bike.picture_link %> />
-      <div class="card-product-infos">
-        <h2><%= booking.bike.name %></h2>
-        (from <%= booking.bike.user.first_name %>)
-        <p><%= booking.start_date %> - <%= booking.end_date %> (<%= booking.end_date - booking.start_date %> days)</p>
-      </div>
+  <div class="card-product">
+    <img src=<%= booking.bike.picture_link %> />
+    <div class="card-product-infos">
+      <h2><%= booking.bike.name %></h2>
+      (from <%= booking.bike.user.first_name %>)
+      <p>📍 <%= booking.bike.location %> <br>📆  <%= booking.start_date %> - <%= booking.end_date %> (<%= (booking.end_date - booking.start_date).to_i %> days)</p>
     </div>
+  </div>
   <% end %>
 
 </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
 
 
 
