@@ -30,7 +30,7 @@
 .card-category {
   font-weight: bold;
   text-align: center;
-  color: #344270
+  color: #344270;
 }
 .card-bike-img {
   border-radius: 8px 8px 0 0;
@@ -46,9 +46,21 @@
   width: 200px;
   border-style: solid;
   border-color: #ED6F37;
+
 }
+
+.card-button:hover{
+  background-color: #344270;
+  border-color: #344270;
+}
+
 a {
   color: white;
+}
+
+a:hover {
+  color: #7998b2;
+  text-decoration: none;
 }
 
 .card-body {
