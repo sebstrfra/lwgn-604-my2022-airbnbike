@@ -23,7 +23,7 @@
             <li class="list-group-item">
               <div class= card-product-bookings-line>
                 <div>
-                  to <strong><%= booking.user.first_name %></strong> from <%= booking.start_date %> to <%= booking.end_date %> <br>
+                  to <strong><%= booking.user.first_name %></strong> from <%= booking.start_date.strftime("%b %d, %Y") %> to <%= booking.end_date.strftime("%b %d, %Y") %> <br>
                 </div>
                 <div class= card-product-bookings-line-options>
                   ✉️ 🗑
@@ -50,7 +50,7 @@
     <div class="card-product-infos">
       <h2><%= booking.bike.name %></h2>
       (from <%= booking.bike.user.first_name %>)
-      <p>📍 <%= booking.bike.location %> <br>📆  <%= booking.start_date %> - <%= booking.end_date %> (<%= (booking.end_date - booking.start_date).to_i %> days)</p>
+      <p>📍 <%= booking.bike.location %> <br>📆  <%= booking.start_date.strftime("%b %d, %Y") %> - <%= booking.end_date.strftime("%b %d, %Y") %> (<%= (booking.end_date - booking.start_date).to_i %> days)</p>
     </div>
   </div>
   <% end %>
