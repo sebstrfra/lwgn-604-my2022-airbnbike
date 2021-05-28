@@ -20,7 +20,7 @@ To: <%= booking.user.first_name %> Start: <%= booking.start_date %>, End: <%= bo
   <h2>myBeeBikeBookings 📆</h2> <br>
   <% @bookings.each do |booking| %>
     <div class="card-product">
-      <img src=<%= booking.bike.picture_link %> />
+      <%= cl_image_tag booking.bike.photos.first.key %>
       <div class="card-product-infos">
         <h2><%= booking.bike.name %></h2>
         (from <%= booking.bike.user.first_name %>)

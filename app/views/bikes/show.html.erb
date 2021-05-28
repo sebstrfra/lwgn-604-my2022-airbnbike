@@ -2,11 +2,11 @@
 
 <div class="img-container">
   <div class="main-img">
-    <%= cl_image_tag @photos.first.key, crop: :fill %>
+    <%= cl_image_tag @photos.first.key, :class=>"img"%>
   </div>
   <div class="right-grid-img">
     <% @photos.each do |photo| %>
-      <%= cl_image_tag photo.key, :class=>"right-grid-img img"%>
+      <%= cl_image_tag photo.key, :class=>"img"%>
     <% end %>
   </div>
 </div>
