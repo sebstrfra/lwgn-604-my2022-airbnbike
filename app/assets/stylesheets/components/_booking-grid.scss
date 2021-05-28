@@ -38,7 +38,10 @@
       border-radius: 8px;
     }
 
-    .my-button {
+
+  }
+}
+.my-button {
       margin-top: 64px;
       color: white;
       background-color:#ED6F37;
@@ -49,9 +52,8 @@
     .my-button:hover {
       background-color: #344270;
       border-color: #344270;
+      color: white;
     }
-  }
-}
 
 h1 {
   margin-top: 16px;
