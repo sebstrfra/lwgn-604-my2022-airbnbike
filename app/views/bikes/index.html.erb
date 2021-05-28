@@ -18,7 +18,7 @@
   <div class="card-deck">
     <% @bikes.each do |bike| %>
     <div class="card card-bike">
-      <img class="card-img-top card-bike-img" src=<%= bike.picture_link %>>
+      <%= cl_image_tag bike.photos.first.key %>
       <div class="card-body">
         <h5 class="card-title"><%= bike.name %></h5>
         <p class="card-text"><%= bike.description %></p>

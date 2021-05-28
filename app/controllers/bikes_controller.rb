@@ -2,6 +2,17 @@ class BikesController < ApplicationController
 
   def show
     @bike = Bike.find(params[:id])
+
+    @photos = @bike.photos
+    if @bike.photos.size < 4
+      until @photos.size == 4
+        @photos << @bike.photos.sample
+      end
+    elsif @bike.photos.size > 4
+      @photos = @bike.photos.sample(4)
+    else
+      @photos = @bike.photos
+    end
   end
 
   def index
