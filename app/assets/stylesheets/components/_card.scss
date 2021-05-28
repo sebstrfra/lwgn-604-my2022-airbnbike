@@ -16,13 +16,9 @@
   border-radius: 10px;
   margin: 16px;
   margin-bottom: 16px;
-  height: 800px;
+  height: 500px;
 }
 
-.card-text {
-  font-size: 16px;
-  text-align: center;
-}
 
 .card-title {
   text-align: center;
@@ -31,10 +27,24 @@
   font-weight: bold;
   text-align: center;
   color: #344270;
+  font-size: 20px;
 }
+
+.card-location {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.card-owner {
+  text-align: center;
+  color: white;
+}
+
 .card-bike-img {
   border-radius: 8px 8px 0 0;
-  border: 1px solid #ED6F37;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   object-fit: cover;
   height: 300px;
 }
@@ -72,6 +82,7 @@ a:hover {
 }
 
 
+
 .card-product {
   overflow: hidden;
   height: 120px;
@@ -81,6 +92,7 @@ a:hover {
   align-items: center;
   margin: 10px;
   color: white;
+  min-width: 600px;
 }
 
 .card-product img {
@@ -96,13 +108,25 @@ a:hover {
 }
 
 .card-product p {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.4;
-  opacity: .7;
   margin-bottom: 0;
-  margin-top: 8px;
+}
+
+.card-product-bookings {
+  margin: 10px;
+}
+
+.card-product-bookings-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-product-bookings-line-options {
+  text-align: right;
 }
 
 .card-product .card-product-infos {
   padding: 16px;
 }
+

@@ -18,12 +18,14 @@
   <div class="card-deck">
     <% @bikes.each do |bike| %>
     <div class="card card-bike">
-      <img class="card-img-top card-bike-img" src=<%= bike.picture_link %>>
+      <%= cl_image_tag bike.photos.first.key, :class=>"card-bike-img"%>
       <div class="card-body">
         <h5 class="card-title"><%= bike.name %></h5>
-         <p class="card-category"><%= bike.category %></p>
-         <p class="card-text"><%= bike.description %></p>
-        <button type="button" class="card-button"><%= link_to "Details", bike_path(bike) %></button>
+         <p class="card-category"><%= bike.category %> | <%= bike.location %> </p>
+
+
+
+        <button type="button" class="card-button"><%= link_to "Book Now", bike_path(bike) %></button>
       </div>
     </div>
     <% end %>
